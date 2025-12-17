@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Veloce Racing India, Formula Student team from VIT Pune. Get in touch, follow us, and find our location on Google Maps.">
+    <title>Contact Us - Veloce Racing India - VIT Pune</title>
+   
+    
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        /* Form validation error styling */
+        .form-error {
+            border-color: rgb(255, 84, 89) !important;
+            border-width: 2px !important;
+            background-color: rgba(255, 84, 89, 0.1);
+        }
+
+        .error-message {
+            color: rgb(255, 84, 89);
+            font-size: 12px;
+            display: block;
+            margin-top: 4px;
+            font-weight: 500;
+        }
+
+        .success-message {
+            color: rgb(50, 184, 198);
+            font-size: 12px;
+            display: block;
+            margin-top: 4px;
+            font-weight: 500;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: 2px solid rgb(45, 166, 178);
+            outline-offset: 2px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            transition: border-color 0.2s ease, background-color 0.2s ease;
+        }
+    </style>
+</head>
+
+<body bgcolor="black" text="aliceblue">
+    <!-- HEADER -->
+    <header>
+        <h1 style="color: rgb(220, 38, 38); text-align: center;">VELOCE RACING INDIA</h1>
+        <h2 style="color: rgb(220, 38, 38); text-align: center;">Contact Us</h2>
+        <hr color="red">
+    </header>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <table width="100%" bgcolor="black" border="0" cellpadding="10">
+            <tr align="center">
+                <td><a href="index.html" style="color: rgb(220, 38, 38); text-decoration: none;"><b>Home</b></a></td>
+                <td><a href="departments.html" style="color: rgb(220, 38, 38); text-decoration: none;"><b>Departments</b></a></td>
+                <td><a href="events.html" style="color: rgb(220, 38, 38); text-decoration: none;"><b>Events</b></a></td>
+                <td><a href="sponsors.html" style="color: rgb(220, 38, 38); text-decoration: none;"><b>Sponsors</b></a></td>
+                <td><a href="club_management.html" style="color: rgb(220, 38, 38); text-decoration: none;"><b>Clubs</b></a></td>
+                <td><a href="contact.html" style="color: rgb(220, 38, 38); text-decoration: none;"><b>Contact</b></a></td>
+            </tr>
+        </table>
+        <hr color="red">
+    </nav>
+
+    <!-- MAIN CONTENT -->
+    <main>
+        <section>
+            <p>Connect with our team for sponsorship, media partnership, or joining opportunities. We welcome inquiries from students and industry collaborators.</p>
+        </section>
+
+        <!-- CONTACT FORM WITH VALIDATION -->
+        <section>
+            <form id="contactForm">
+                <table align="center" bgcolor="black" cellpadding="8" style="border: 1px solid rgb(220, 38, 38); border-radius: 8px; padding: 20px; max-width: 500px;">
+                    <!-- Name Field -->
+                    <tr>
+                        <td><label for="name"><b>Name</b></label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="name" name="name" placeholder="Enter your full name" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid rgb(100, 100, 100); background-color: rgba(255, 255, 255, 0.1); color: aliceblue;">
+                            <span id="name-error" class="error-message"></span>
+                        </td>
+                    </tr>
+
+                    <!-- Email Field -->
+                    <tr style="height: 20px;"></tr>
+                    <tr>
+                        <td><label for="email"><b>Email</b></label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="email" id="email" name="email" placeholder="Enter your email address" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid rgb(100, 100, 100); background-color: rgba(255, 255, 255, 0.1); color: aliceblue;">
+                            <span id="email-error" class="error-message"></span>
+                        </td>
+                    </tr>
+
+                    <!-- Subject Field -->
+                    <tr style="height: 20px;"></tr>
+                    <tr>
+                        <td><label for="subject"><b>Subject</b></label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text" id="subject" name="subject" placeholder="What is this about?" style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid rgb(100, 100, 100); background-color: rgba(255, 255, 255, 0.1); color: aliceblue;">
+                            <span id="subject-error" class="error-message"></span>
+                        </td>
+                    </tr>
+
+                    <!-- Message Field -->
+                    <tr style="height: 20px;"></tr>
+                    <tr>
+                        <td><label for="message"><b>Message</b></label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <textarea id="message" name="message" rows="5" cols="30" placeholder="Type your message here (min 10 characters)..." style="width: 100%; padding: 8px; border-radius: 4px; border: 1px solid rgb(100, 100, 100); background-color: rgba(255, 255, 255, 0.1); color: aliceblue; font-family: Arial, sans-serif; resize: none;"></textarea>
+                            <span id="message-error" class="error-message"></span>
+                        </td>
+                    </tr>
+
+                    <!-- Submit & Reset Buttons -->
+                    <tr style="height: 20px;"></tr>
+                    <tr>
+                        <td align="center">
+                            <button type="submit" style="background-color: rgb(220, 38, 38); color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; margin-right: 10px; transition: background-color 0.3s;">Send</button>
+                            <button type="reset" style="background-color: rgb(100, 100, 100); color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; transition: background-color 0.3s;">Clear</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+
+        <!-- CONTACT INFO -->
+        <section>
+            <ul>
+                <li><b style="color: rgb(220, 38, 38);">Email:</b> teamveloceracing@gmail.com</li>
+                <li><b style="color: rgb(220, 38, 38);">Instagram:</b> <a href="https://www.instagram.com/veloceracingindia" style="color: darkred;">@veloceracingindia</a></li>
+                <li><b style="color: rgb(220, 38, 38);">Address:</b> 666, Upper Indira Nagar, Bibwewadi, Pune, Maharashtra 411037</li>
+            </ul>
+        </section>
+
+        <!-- SOCIAL MEDIA -->
+        <h2 style="color: rgb(220, 38, 38); text-align: center;">Social Media</h2>
+        <table align="center" cellpadding="6">
+            <tr>
+                <td align="center">
+                    <a href="https://www.instagram.com/veloceracingindia" target="_blank">
+                        <img src="images/Instagram_icon.png" alt="Instagram" width="32" height="32">
+                    </a>
+                </td>
+                <td align="center">
+                    <a href="https://www.facebook.com/TeamVeloce" target="_blank">
+                        <img src="images/facebook_icon.png" alt="Facebook" width="32" height="32">
+                    </a>
+                </td>
+                <td align="center">
+                    <a href="https://in.linkedin.com/company/team-veloce-racing" target="_blank">
+                        <img src="images/linked_in_icon.png" alt="LinkedIn" width="32" height="32">
+                    </a>
+                </td>
+            </tr>
+        </table>
+
+        <br>
+        <h2 style="color: rgb(220, 38, 38); text-align: center;">Find Us On Google Maps</h2>
+        <iframe src="https://www.google.com/maps?q=Vishwakarma+Institute+of+Technology,+Upper+Indira+Nagar,+Bibwewadi,+Pune&output=embed" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <br><br>
+        <section style="text-align: center;">
+            <img src="images/veloce_racing_logo.png" height="75" alt="Veloce racing Logo">
+        </section>
+        <br>
+    </main>
+
+    <!-- FOOTER -->
+    <hr color="darkred">
+    <footer style="text-align: center; padding: 20px; color: rgb(220, 38, 38);">
+        <p>
+            <a href="index.html" style="color: rgb(220, 38, 38); text-decoration: none; margin: 0 15px;">Home</a>
+            <a href="departments.html" style="color: rgb(220, 38, 38); text-decoration: none; margin: 0 15px;">Departments</a>
+            <a href="events.html" style="color: rgb(220, 38, 38); text-decoration: none; margin: 0 15px;">Events</a>
+            <a href="sponsors.html" style="color: rgb(220, 38, 38); text-decoration: none; margin: 0 15px;">Sponsors</a>
+            <a href="club_management.html" style="color: rgb(220, 38, 38); text-decoration: none;"><b>Clubs</b></a>
+            <a href="contact.html" style="color: rgb(220, 38, 38); text-decoration: none; margin: 0 15px;">Contact</a>
+        </p>
+        <p style="color: rgb(220, 38, 38); text-align: center;">&copy; 2025 Veloce Racing India • Let's Build the Future Together</p>
+    </footer>
+
+    <!-- LOAD VALIDATION SCRIPT -->
+    <script src="validation.js"></script>
+
+</body>
+
+</html>
